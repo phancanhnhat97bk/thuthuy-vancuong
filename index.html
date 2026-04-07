@@ -99,11 +99,20 @@ body {
 /* ===== HERO ===== */
 .hero {
   height: 100vh;
-  background: url("https://res.cloudinary.com/drramnbrw/image/upload/v1775563638/z7701173366080_61ba324b3f8dc51e53b37997d7d00ec1_compressed_qgsoyu.webp") top/cover no-repeat;
+
+  /* Background đầy đủ, dễ chỉnh */
+  background-image: url("https://res.cloudinary.com/drramnbrw/image/upload/v1775563638/z7701173366080_61ba324b3f8dc51e53b37997d7d00ec1_compressed_qgsoyu.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* 👉 chỉnh vị trí ảnh (giữa top và center) */
+  background-position: center 25%;
+
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;      /* KHÔNG khóa đáy */
+  align-items: center;
+
   color: #f80000;
   overflow: hidden;
 }
